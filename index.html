@@ -69,8 +69,8 @@
         <h1>Welcome to OTHERS Technology</h1>
         <h2>Optimal Universal Design Systems</h2>
         <div class="actions">
-          <a href="#about" class="btn-get-started" onClick="ga('send', 'event', 'aboutus', 'click', 'aboutus', 2);" >About US</a>
-          <a href="#joinus" class="btn-services" onClick="ga('send', 'event', 'joinus', 'click', 'joinus', 2);">Join US</a>
+          <a href="#about" class="btn-get-started" onClick="ga('send', 'event', 'aboutus', 'click', {'dimension1':'homepage', 'metric1':1});" >About US</a>
+          <a href="#joinus" class="btn-services" onClick="ga('send', 'event', 'joinus', 'click', {'dimension1':'homepage', 'metric1':1});">Join US</a>
         </div>
       </div>
     </div>
@@ -92,9 +92,9 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#about" onClick="ga('send', 'event', 'aboutus', 'click', 'aboutus', 2);" >About Us</a></li>
-          <li><a href="#joinus" onClick="ga('send', 'event', 'joinus', 'click', 'joinus', 2);" >Join Us</a></li>
-          <li><a href="#contact" onClick="ga('send', 'event', 'contactus', 'click', 'contactus', 2);" >Contact Us</a></li>
+          <li><a href="#about" onClick="ga('send', 'event', 'aboutus', 'click', {'dimension2':'header', 'metric1':1});" >About Us</a></li>
+          <li><a href="#joinus" onClick="ga('send', 'event', 'joinus', 'click', {'dimension2':'header', 'metric1':1});" >Join Us</a></li>
+          <li><a href="#contact" onClick="ga('send', 'event', 'contactus', 'click', {'dimension1':'header', 'metric1':1});" >Contact Us</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -127,7 +127,7 @@
             Our team is led by Dr. David Tan, who was a founding engineer of company example (NYSE:SPGT). You will be working in a small but very collaborative environment under guidance of industry veterans in the valley.
           </p>
           <br><br>
-          <a href="learn_more.html" onClick="ga('send', 'event', 'learnmore', 'click', 'learnteam', 2);" >Learn More about our CEO and team </a>
+          <a href="learn_more.html" onClick="ga('send', 'event', 'link', 'click', {'dimension1':'learnmore', 'metric1':1});" >Learn More about our CEO and team </a>
         </div>
       </div>
     </div>
@@ -164,7 +164,7 @@
                 You will be responsible for building chip design infrastructure,
                 architecture/microarchitecture design as well as pre/post-silicon verifications and bring ups.
 
-                <form action="action_page1.html" onClick="ga('send', 'event', 'apply1', 'click', 'apply1', 2);" >
+                <form action="action_page1.html" onClick="ga('send', 'event', 'apply', 'click', {'dimension1':'Architecture Engineer', 'metric1':1});" >
                   First name:<br>
                   <input type="text" name="firstname" value="Nino">
                   <br>
@@ -196,7 +196,7 @@
                 the development of silicon photonic systems for optical sensing applications.
                 The position requires a strong background in photonic devices, and strong experience in the layout of integrated photonics.
 
-                <form action="action_page3.html" onClick="ga('send', 'event', 'apply2', 'click', 'apply2', 2);" >
+                <form action="action_page3.html" onClick="ga('send', 'event', 'apply', 'click', {'dimension2':'Design Engineer', 'metric1':1});" >
                   First name:<br>
                   <input type="text" name="firstname" value="Maxine">
                   <br>
@@ -227,7 +227,7 @@
                 Involved in specifications of analog portions of IC. Behavioral modeling to validate architectures.
                 Designing analog circuit blocks and documenting designs. Top-level simulations to validate top-level integration.
 
-                <form action="action_page2.html" onClick="ga('send', 'event', 'apply3', 'click', 'apply3', 2);" >
+                <form action="action_page2.html" onClick="ga('send', 'event', 'apply', 'click', {'dimension3':'IC Designer', 'metric1':1});" >
                   First name:<br>
                   <input type="text" name="firstname" value="Jennifer">
                   <br>
@@ -276,7 +276,7 @@
           <div class="info">
             <div>
               <i class="fa fa-envelope"></i>
-              <p><a href="mailto:info@others.com">info@others.com</a></p>
+              <p><a href="mailto:info@others.com" onClick="ga('send', 'event', 'link', 'click', {'dimension2':'infoemail', 'metric1':1});">info@others.com</a></p>
             </div>
           </div>
         </div>
